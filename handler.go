@@ -27,7 +27,7 @@ func PostBalasan(w http.ResponseWriter, r *http.Request) {
 				location = "Unknown Location"
 			}
 
-			reply := fmt.Sprintf("Hai hai haiii kamu pasti lagi di %s \n Koordinatenya : %s - %s\n Cara Penggunaan WhatsAuth Ada di link dibawah ini"+
+			reply := fmt.Sprintf("Hayoooo lagi ngapain di %s \n Koordinatenya : %s - %s\n Cara Penggunaan WhatsAuth Ada di link dibawah ini"+
 				"yaa kak %s\n", location,
 				strconv.Itoa(int(msg.Longitude)), strconv.Itoa(int(msg.Latitude)), link)
 			dt := &wa.TextMessage{
@@ -38,8 +38,9 @@ func PostBalasan(w http.ResponseWriter, r *http.Request) {
 			resp, _ = atapi.PostStructWithToken[atmessage.Response]("Token", os.Getenv("TOKEN"), dt, "https://api.wa.my.id/api/send/message/text")
 		} else {
 			randm := []string{
-				"Hai Kamu Yang Menatap Layar " + msg.Alias_name + "\nzaynya lagi gaadaa \n aku gisbot gans salam kenall yaaaa \n Cara penggunaan WhatsAuth ada di link berikut ini ya kak...\n" + link,
+				"Hai Kamu Yang Menatap Layar " + msg.Alias_name + "\nzaynya lagi gaadaa \n aku gansbot salam kenall yaaaa \n Cara penggunaan WhatsAuth ada di link berikut ini yakkk...\n" + link,
 				"KALEM LAGI SIBUK BOS",
+				"MAKASIH YANG SUDAH COBAIN BOTKU",
 				"BOLEHHHHH",
 				"NAHA KAMUUU BISA CANTIK BINGITTTZZZZZ",
 				"cuy, gans laparrrrrrr",

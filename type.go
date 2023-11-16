@@ -6,6 +6,7 @@ type Reply struct {
 
 var stringreply = []string{
 	"KALEM LAGI SIBUK BOS",
+	
 	"BOLEHHHHH",
 	"NAHA KAMUUU BISA CANTIK BINGITTTZZZZZ",
 	"cuy, gans laparrrrrrr",
